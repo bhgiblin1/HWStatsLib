@@ -14,6 +14,7 @@ public:
 	GPUQuery();
 	~GPUQuery();
 	gpuStats* GetGPUStats();
+	std::string GetGPUName();
 
 private:
 	int gpuDeviceNum;

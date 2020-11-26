@@ -17,3 +17,9 @@ gpuStats* GetGPUStats(GPUQuery* gpuQuery)
 	if (gpuQuery != NULL)
 		return gpuQuery->GetGPUStats();
 }
+
+std::string GetGPUName(GPUQuery* gpuQuery)
+{
+	if (gpuQuery != NULL)
+		return gpuQuery->GetGPUName();
+}

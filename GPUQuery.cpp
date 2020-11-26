@@ -25,9 +25,8 @@ GPUQuery::~GPUQuery()
 	alive = false;
 	backgroundThread.join();
 	if (result != NULL)
-	{
 		delete result;
-	}
+	nvmlShutdown();
 }
 
 gpuStats* GPUQuery::GetGPUStats()
@@ -68,4 +67,9 @@ void GPUQuery::ExecuteQuery()
 	std::cout << "GPU Clock: " << clock << "MHz" << std::endl;
 	std::cout << "GPU Fan Utilization: " << fanUsage << " %" << std::endl;
 	std::cout << "GPU Load: " << utilization.gpu << std::endl;
+}
+
+std::string GPUQuery::GetGPUName()
+{
+	return gpuName;
 }
