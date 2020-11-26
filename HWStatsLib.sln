@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SensorReaderLib", "SensorReaderLib.vcxproj", "{13938443-F94C-4C3E-ABF2-A2ACB9CEBA55}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13938443-F94C-4C3E-ABF2-A2ACB9CEBA55}.Debug|x64.ActiveCfg = Debug|x64
+		{13938443-F94C-4C3E-ABF2-A2ACB9CEBA55}.Debug|x64.Build.0 = Debug|x64
+		{13938443-F94C-4C3E-ABF2-A2ACB9CEBA55}.Release|x64.ActiveCfg = Release|x64
+		{13938443-F94C-4C3E-ABF2-A2ACB9CEBA55}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A17B5419-10F3-4561-AEBE-1A16AE1BE36A}
+	EndGlobalSection
+EndGlobal
