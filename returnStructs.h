@@ -6,3 +6,9 @@ typedef struct
 	unsigned int fanUsage;
 	unsigned int load;
 } gpuStats;
+
+typedef struct
+{
+	unsigned int load;
+	double amtUsed;
+} memStats;

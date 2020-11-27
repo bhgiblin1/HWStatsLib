@@ -20,6 +20,12 @@
     <ClCompile Include="GPUQueryExport.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MemoryQuery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryQueryExport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GPUQuery.h">
@@ -29,6 +35,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="GPUQueryExport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryQueryExport.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

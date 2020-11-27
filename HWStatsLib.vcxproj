@@ -85,10 +85,14 @@
   <ItemGroup>
     <ClCompile Include="GPUQuery.cpp" />
     <ClCompile Include="GPUQueryExport.cpp" />
+    <ClCompile Include="MemoryQuery.cpp" />
+    <ClCompile Include="MemoryQueryExport.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GPUQuery.h" />
     <ClInclude Include="GPUQueryExport.h" />
+    <ClInclude Include="MemoryQuery.h" />
+    <ClInclude Include="MemoryQueryExport.h" />
     <ClInclude Include="returnStructs.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
