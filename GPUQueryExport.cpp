@@ -18,8 +18,18 @@ gpuStats* GetGPUStats(GPUQuery* gpuQuery)
 		return gpuQuery->GetGPUStats();
 }
 
-std::string GetGPUName(GPUQuery* gpuQuery)
+const wchar_t* GetGPUName(GPUQuery* gpuQuery)
 {
 	if (gpuQuery != NULL)
-		return gpuQuery->GetGPUName();
+	{
+		std::string gpuName = gpuQuery->GetGPUName();
+		static auto wstr = std::wstring(gpuName.begin(), gpuName.end());
+		return wstr.c_str();
+	}
+}
+
+unsigned int GetGPUMaxClock(GPUQuery* gpuQuery)
+{
+	if (gpuQuery != NULL)
+		return gpuQuery->GetMaxClock();
 }

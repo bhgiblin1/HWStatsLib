@@ -23,7 +23,8 @@ GPUQuery::GPUQuery()
 GPUQuery::~GPUQuery()
 {
 	alive = false;
-	backgroundThread.join();
+	if (backgroundThread.joinable())
+		backgroundThread.join();
 	if (result != NULL)
 		delete result;
 	nvmlShutdown();
@@ -72,4 +73,11 @@ void GPUQuery::ExecuteQuery()
 std::string GPUQuery::GetGPUName()
 {
 	return gpuName;
+}
+
+unsigned int GPUQuery::GetMaxClock()
+{
+	unsigned int maxClock;
+	nvmlDeviceGetMaxClockInfo(device, NVML_CLOCK_GRAPHICS, &maxClock);
+	return maxClock;
 }

@@ -15,16 +15,16 @@ public:
 	~GPUQuery();
 	gpuStats* GetGPUStats();
 	std::string GetGPUName();
+	unsigned int GetMaxClock();
 
 private:
 	int gpuDeviceNum;
 	std::string gpuName;
 	nvmlDevice_t device;
 	nvmlUtilization_t utilization;
-	gpuStats* result;
+	gpuStats* result = NULL;
 	bool alive;
 	std::thread backgroundThread;
-
 
 	unsigned int temp, clock, fanUsage;
 	void BackgroundRefresh();
