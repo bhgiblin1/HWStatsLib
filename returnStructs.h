@@ -12,3 +12,10 @@ typedef struct
 	unsigned int load;
 	double amtUsed;
 } memStats;
+
+typedef struct
+{
+	int temp;
+	double load;
+	double clockPercent;
+} cpuStats;

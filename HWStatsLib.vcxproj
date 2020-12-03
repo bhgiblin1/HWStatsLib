@@ -83,12 +83,16 @@
     <CudaCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CPUQuery.cpp" />
+    <ClCompile Include="CPUQueryExport.cpp" />
     <ClCompile Include="GPUQuery.cpp" />
     <ClCompile Include="GPUQueryExport.cpp" />
     <ClCompile Include="MemoryQuery.cpp" />
     <ClCompile Include="MemoryQueryExport.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CPUQuery.h" />
+    <ClInclude Include="CPUQueryExport.h" />
     <ClInclude Include="GPUQuery.h" />
     <ClInclude Include="GPUQueryExport.h" />
     <ClInclude Include="MemoryQuery.h" />

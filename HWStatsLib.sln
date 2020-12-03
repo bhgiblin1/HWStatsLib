@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SensorReaderLib", "SensorReaderLib.vcxproj", "{13938443-F94C-4C3E-ABF2-A2ACB9CEBA55}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HWStatsLib", "HWStatsLib.vcxproj", "{13938443-F94C-4C3E-ABF2-A2ACB9CEBA55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A17B5419-10F3-4561-AEBE-1A16AE1BE36A}
+		SolutionGuid = {8A3D5500-8A72-4803-9108-86C3E78DC870}
 	EndGlobalSection
 EndGlobal
