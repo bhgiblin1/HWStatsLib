@@ -5,6 +5,8 @@ typedef struct
 	unsigned int clock;
 	unsigned int fanUsage;
 	unsigned int load;
+	double memoryTotal;
+	double memoryUsage;
 } gpuStats;
 
 typedef struct

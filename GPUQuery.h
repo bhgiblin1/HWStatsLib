@@ -22,6 +22,7 @@ private:
 	std::string gpuName;
 	nvmlDevice_t device;
 	nvmlUtilization_t utilization;
+	nvmlMemory_t memory;
 	gpuStats* result = NULL;
 	bool alive;
 	std::thread backgroundThread;

@@ -58,16 +58,21 @@ void GPUQuery::ExecuteQuery()
 	nvmlDeviceGetClockInfo(device, NVML_CLOCK_GRAPHICS, &clock);
 	nvmlDeviceGetFanSpeed(device, &fanUsage);
 	nvmlDeviceGetUtilizationRates(device, &utilization);
+	nvmlDeviceGetMemoryInfo(device, &memory);
 
 	result->temp = this->temp;
 	result->clock = this->clock;
 	result->fanUsage = this->fanUsage;
 	result->load = this->utilization.gpu;
+	result->memoryTotal = this->memory.total / 1.074e+9;
+	result->memoryUsage = this->memory.used / 1.074e+9;
 
 	std::cout << "GPU Temperature: " << temp << "C" << std::endl;
 	std::cout << "GPU Clock: " << clock << "MHz" << std::endl;
 	std::cout << "GPU Fan Utilization: " << fanUsage << " %" << std::endl;
 	std::cout << "GPU Load: " << utilization.gpu << std::endl;
+	std::cout << "GPU RAM Used " << result->memoryUsage << std::endl;
+	std::cout << "GPU RAM Total " << result->memoryTotal << std::endl;
 }
 
 std::string GPUQuery::GetGPUName()
