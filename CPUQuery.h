@@ -5,7 +5,7 @@
 #include <iostream>
 #include "pdh.h"
 
-#include "../pcm/cpucounters.h"
+#include "pcm/cpucounters.h"
 #include "returnStructs.h"
 
 class __declspec(dllexport) CPUQuery
